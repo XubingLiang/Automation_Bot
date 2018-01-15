@@ -18,7 +18,7 @@ $ pip install selenium
 pip install ipython
 ```
 
-## install chrome driver(I am using brew for macOS
+## install chrome driver(you can use brew for macOS)
 ```sh
 $ brew install chromedriver
 ```
