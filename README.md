@@ -34,7 +34,7 @@ $curl http://chromedriver.storage.googleapis.com/$VERSION/chromedriver_$PLATFORM
 ```
 
 ## check if chrome drive installed
-``sh
+```sh
 #you should see the following line after run chromedriver
 $ chromedriver
 Starting ChromeDriver 2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4) on port 9515
