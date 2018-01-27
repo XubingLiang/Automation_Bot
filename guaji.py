@@ -49,7 +49,19 @@ class automatic_online_study():
 				self.driver.refresh()
 				time.sleep(600)
 			pass
-		else :
+		elif str(self.week)=="3" or str(self.week) =="5" :
+			text_arr=text.split(' ')
+			study_content=text_arr[1]+"_Online Learning Guide"
+			link = self.driver.find_element_by_partial_link_text(text)
+			link.click()
+			print study_content
+			study_link = self.driver.find_element_by_partial_link_text(study_content)
+			study_link.click()
+			while True:
+				print "In progress"
+				self.driver.refresh()
+				time.sleep(600)
+		else:
 			text_arr=text.split(' ')
 			study_content=text_arr[1]+"_Online Study Guide"
 			link = self.driver.find_element_by_partial_link_text(text)
